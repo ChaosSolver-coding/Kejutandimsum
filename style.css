@@ -1,0 +1,95 @@
+body {
+  background: #ffeede;
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+h1 {
+  color: #d35400;
+}
+.wheel-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.logo-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 50%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+.form input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#winners {
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+#winners h2 {
+  margin-top: 0;
+}
+
+/* POPUP STYLES */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.popup-content {
+  background-color: #fff;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+.popup-content button {
+  background-color: #d35400;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
